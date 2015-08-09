@@ -8,10 +8,16 @@ class DList {
 */
 
 //version 2 circularly linked 
-class DList {
+public class DList {
 	private DListNode head; //this is to the sentinel
 	//prev points to tail, next points to head on DListNode, nulls point to sentinel  does not effect size
 	private int size; 
+
+	public DList() {
+		DListNode d = new DListNode(3);
+		this.head = d;
+		this.size = 0;
+	}
 }
 /* 
 invariants with sentinel
@@ -23,5 +29,5 @@ invariants with sentinel
 	size field is always correct 
 	number of DList nodes in the list, not counting the sentinel 
 	empty DList: sentinel previous and next point to itself 
+*/
 
-	

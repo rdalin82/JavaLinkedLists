@@ -19,8 +19,20 @@ Inserting or deleting at end of the list
 
 class DListNode {
 	Object item;
-	DlistNode next;
-	DListnode prev;
+	DListNode next;
+	DListNode prev;
+
+	public DListNode(Object item, DListNode next, DListNode prev) {
+		this.item = item;
+		this.next = next;
+		this.prev = prev;
+	}
+
+	public DListNode (Object item){
+		this.item = item;
+		this.next = null; 
+		this.prev = null; 
+	}
 }
 
 
